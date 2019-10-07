@@ -3,6 +3,8 @@ import SEO from '../components/seo';
 import HeroSlider from '../components/organisms/HeroSlider';
 import GlobalStyle from '../theme/GlobalStyle';
 import { Helmet } from 'react-helmet';
+import NewsSection from '../components/organisms/NewsSection';
+import MainTemplate from '../components/templates/MainTemplate';
 
 const IndexPage = () => (
   <>
@@ -21,7 +23,10 @@ const IndexPage = () => (
     </Helmet>
     <SEO title="Site Task" />
     <GlobalStyle />
-    <HeroSlider />
+    <MainTemplate>
+      <HeroSlider />
+      <NewsSection />
+    </MainTemplate>
   </>
 );
 
