@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledBackground = styled.div`
   display: flex;
@@ -53,5 +54,10 @@ const NewsItem = ({ src, title }) => (
     </StyledWrapper>
   </StyledBackground>
 );
+
+NewsItem.propTypes = {
+  src: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default NewsItem;
