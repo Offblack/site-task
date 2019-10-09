@@ -25,11 +25,13 @@ const OneSlide = styled.div`
 `;
 
 const HeroSlider = () => (
-  <StyledWrapper>
-    <Slider speed={500} slidesToShow={1} slidesToScroll={1} infinite={true}>
-      <OneSlide bigSrc={bigBaner} smallSrc={smallBaner} />
-    </Slider>
-  </StyledWrapper>
+  <section>
+    <StyledWrapper>
+      <Slider speed={500} slidesToShow={1} slidesToScroll={1} infinite={true}>
+        <OneSlide bigSrc={bigBaner} smallSrc={smallBaner} />
+      </Slider>
+    </StyledWrapper>
+  </section>
 );
 
 export default HeroSlider;
