@@ -8,44 +8,18 @@ const StyledBackground = styled.div`
   width: 240px;
   height: 319px;
   background: transparent;
+  background: rgba(255, 255, 255, 0);
   border-radius: 7px;
   cursor: pointer;
 
   :hover {
-    /* Background */
-    background: rgba(241, 0, 125, 1);
-    background: -moz-linear-gradient(
-      45deg,
-      rgba(241, 0, 125, 1) 0%,
-      rgba(0, 158, 226, 1) 100%
-    );
-    background: -webkit-gradient(
-      left bottom,
-      right top,
-      color-stop(0%, rgba(241, 0, 125, 1)),
-      color-stop(100%, rgba(0, 158, 226, 1))
-    );
-    background: -webkit-linear-gradient(
-      45deg,
-      rgba(241, 0, 125, 1) 0%,
-      rgba(0, 158, 226, 1) 100%
-    );
-    background: -o-linear-gradient(
-      45deg,
-      rgba(241, 0, 125, 1) 0%,
-      rgba(0, 158, 226, 1) 100%
-    );
-    background: -ms-linear-gradient(
-      45deg,
-      rgba(241, 0, 125, 1) 0%,
-      rgba(0, 158, 226, 1) 100%
-    );
+    /* Background gradients*/
+    background: rgb(241, 0, 125);
     background: linear-gradient(
       45deg,
       rgba(241, 0, 125, 1) 0%,
       rgba(0, 158, 226, 1) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1007d', endColorstr='#009ee2', GradientType=1 );
   }
 `;
 

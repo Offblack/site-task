@@ -27,8 +27,10 @@ const StyledWrapper = styled.div`
 `;
 
 const NewsSection = () => (
-  <>
-    <Header>Nowości</Header>
+  <section>
+    <header>
+      <Header>Nowości</Header>
+    </header>
     <StyledWrapper>
       <NewsItem src={businessCard} title="Wizytówki" />
       <NewsItem src={leaflet} title="Ulotki" />
@@ -39,7 +41,7 @@ const NewsSection = () => (
       <NewsItem src={banner} title="Banner" />
       <NewsItem src={mesh} title="Siatka mesh" />
     </StyledWrapper>
-  </>
+  </section>
 );
 
 export default NewsSection;
