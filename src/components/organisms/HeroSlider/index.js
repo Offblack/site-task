@@ -18,15 +18,6 @@ const OneSlide = styled.div`
   background-size: cover;
   height: 500px;
   position: relative;
-
-  @media (max-width: 360px) {
-  }
-
-  @media (max-width: 540px) and (min-width: 360px) {
-  }
-
-  @media (max-width: 1140px) and (min-width: 540px) {
-  }
 `;
 
 const SlideContainer = styled.div`
