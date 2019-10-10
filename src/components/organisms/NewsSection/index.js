@@ -15,7 +15,7 @@ const StyledWrapper = styled.div`
   margin: 0px auto 100px;
   display: grid;
   grid-template-columns: repeat(4, 240px);
-  grid-gap: 50px;
+  grid-gap: 46px;
 
   @media (max-width: 1140px) and (min-width: 540px) {
     grid-template-columns: repeat(2, 240px);
@@ -23,7 +23,7 @@ const StyledWrapper = styled.div`
 
   @media (max-width: 540px) {
     grid-template-columns: repeat(1, 240px);
-    grid-gap: 20px;
+    grid-gap: 16px;
   }
 `;
 
