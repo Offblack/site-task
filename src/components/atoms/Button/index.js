@@ -10,6 +10,11 @@ const Button = styled.button`
   border-radius: 4px;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.05);
   margin: 0;
+  transition: all 0.3s ease-in-out;
+
+  :hover {
+    background-color: rgba(256, 15, 138, 1);
+  }
 `;
 
 export default Button;

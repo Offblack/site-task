@@ -7,6 +7,7 @@ import Button from '../../atoms/Button';
 import SliderHeader from '../../atoms/SliderHeader';
 import bigCard from '../../../images/business_cards_big.png';
 import smallCard from '../../../images/business_cards_small.png';
+import { Link } from 'gatsby';
 
 const StyledWrapper = styled.div`
   width: 100%;
@@ -64,6 +65,11 @@ const RightContainer = styled.div`
   }
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  display: inline-block;
+`;
+
 const HeroSlider = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 540px)' });
   const isDesktop = useMediaQuery({ query: '(min-width: 541px)' });
@@ -81,7 +87,9 @@ const HeroSlider = () => {
                 <StyledParagraph small>
                   Otwieramy się na niskie nakłady! Niższe ceny małych zamówień!
                 </StyledParagraph>
-                <Button>Więcej informacji</Button>
+                <Button as={StyledLink} to="/">
+                  Więcej informacji
+                </Button>
               </SlideContainer>
             )}
             {isDesktop && (
@@ -95,7 +103,9 @@ const HeroSlider = () => {
                     Otwieramy się na niskie nakłady! Niższe ceny małych
                     zamówień!
                   </StyledParagraph>
-                  <Button>Więcej informacji</Button>
+                  <Button as={StyledLink} to="/">
+                    Więcej informacji
+                  </Button>
                 </RightContainer>
               </SlideContainer>
             )}
