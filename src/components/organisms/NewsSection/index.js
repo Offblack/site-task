@@ -23,8 +23,20 @@ const StyledWrapper = styled.div`
 
   @media (max-width: 540px) {
     grid-template-columns: repeat(1, 240px);
+    grid-gap: 20px;
   }
 `;
+
+const gridItems = [
+  { src: businessCard, title: 'Wizytówki' },
+  { src: leaflet, title: 'Ulotki' },
+  { src: poster, title: 'Plakaty' },
+  { src: calendar, title: 'Kalendarze' },
+  { src: folder, title: 'Teczki' },
+  { src: stickers, title: 'Naklejki' },
+  { src: banner, title: 'Banner' },
+  { src: mesh, title: 'Siatka mesh' },
+];
 
 const NewsSection = () => (
   <section>
@@ -32,14 +44,9 @@ const NewsSection = () => (
       <Header>Nowości</Header>
     </header>
     <StyledWrapper>
-      <NewsItem src={businessCard} title="Wizytówki" />
-      <NewsItem src={leaflet} title="Ulotki" />
-      <NewsItem src={poster} title="Plakaty" />
-      <NewsItem src={calendar} title="Kalendarze" />
-      <NewsItem src={folder} title="Teczki" />
-      <NewsItem src={stickers} title="Naklejki" />
-      <NewsItem src={banner} title="Banner" />
-      <NewsItem src={mesh} title="Siatka mesh" />
+      {gridItems.map(item => (
+        <NewsItem {...item} />
+      ))}
     </StyledWrapper>
   </section>
 );

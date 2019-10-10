@@ -7,11 +7,9 @@ const StyledBackground = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 240px;
-  height: 319px;
   background: transparent;
   background-image: rgba(255, 255, 255, 0);
-  border-radius: 7px;
+  border-radius: 6px;
   cursor: pointer;
 
   ::before {
@@ -21,7 +19,7 @@ const StyledBackground = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    border-radius: 7px;
+    border-radius: 6px;
     background: rgb(241, 0, 125);
     background-image: linear-gradient(
       45deg,
@@ -44,21 +42,20 @@ const StyledWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 236px;
-  height: 315px;
+  max-width: 236px;
+  max-height: 315px;
+  margin: 2px;
   background-color: #fafafa;
   border-radius: 5px;
 `;
 
 const StyledParagraph = styled.p`
-  position: absolute;
-  bottom: 43px;
+  padding-bottom: 45px;
   font-size: 18px;
 `;
 
 const StyledImage = styled.img`
-  padding-bottom: 55px;
+  padding: 54px 20px 0;
 `;
 
 const NewsItem = ({ src, title }) => (
