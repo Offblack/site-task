@@ -3,7 +3,7 @@
   Site Task - custom site created with GatsbyJS
 </h1>
 
-To check project download repository and run `npm run start` or `gatsby develop`
+To check project clone or download repository and run `npm run start` or `gatsby develop`
 
 ## 🚀 Quick start
 
